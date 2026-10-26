@@ -1,9 +1,10 @@
 name: Monitor cita registro civil
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
   workflow_dispatch: {}
+  # Cron desactivado: el monitor real ahora corre en Cloudflare Workers.
+  # schedule:
+  #   - cron: '*/5 * * * *'
 
 jobs:
   check:
